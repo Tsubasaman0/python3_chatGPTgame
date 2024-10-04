@@ -148,6 +148,9 @@ Item_bag: {self.item_bag}''')
                 except ValueError:
                     error_message()
             break
+    # キャラクターがアイテムを使う関数 Character.use_item(item)
+    def use_item(self, item):
+        item.use() # Itemを使う関数を作る
                     
 # アイテムのクラス
 class Item:
