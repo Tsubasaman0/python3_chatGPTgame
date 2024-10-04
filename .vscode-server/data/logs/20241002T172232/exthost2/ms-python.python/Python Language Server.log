@@ -1,0 +1,59 @@
+2024-10-02 17:23:17.856 [info] (Client) Pylance async client (2024.9.2) started with python extension (2024.14.1)
+2024-10-02 17:23:18.654 [info] [Info  - 5:23:18 PM] (15827) Server root directory: file:///home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist
+2024-10-02 17:23:18.655 [info] [Info  - 5:23:18 PM] (15827) Pylance language server 2024.9.2 (pyright version 1.1.378, commit ce64adc1) starting
+2024-10-02 17:23:18.655 [info] [Info  - 5:23:18 PM] (15827) Starting service instance "tsubasaman"
+2024-10-02 17:23:18.713 [info] [Info  - 5:23:18 PM] (15827) Setting environmentName for service "tsubasaman": "C:\Users\luvdr\AppData\Local\Programs\Python\Python310\python.exe"
+2024-10-02 17:23:18.715 [info] [Info  - 5:23:18 PM] (15827) No include entries specified; assuming /home/tsubasaman
+2024-10-02 17:23:18.716 [info] [Info  - 5:23:18 PM] (15827) Auto-excluding **/node_modules
+2024-10-02 17:23:18.716 [info] [Info  - 5:23:18 PM] (15827) Auto-excluding **/__pycache__
+2024-10-02 17:23:18.716 [info] [Info  - 5:23:18 PM] (15827) Auto-excluding **/.*
+2024-10-02 17:23:18.796 [info] [Info  - 5:23:18 PM] (15827) Found 4 source files
+2024-10-02 17:23:19.296 [info] [Info  - 5:23:19 PM] (15827) Background analysis(1) root directory: file:///home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist
+2024-10-02 17:23:19.300 [info] [Info  - 5:23:19 PM] (15827) Background analysis(1) started
+2024-10-02 17:23:19.432 [info] [Info  - 5:23:19 PM] (15827) Indexer background runner(2) root directory: file:///home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist (index)
+2024-10-02 17:23:19.432 [info] [Info  - 5:23:19 PM] (15827) Indexing(2) started
+2024-10-02 17:23:19.987 [info] [Info  - 5:23:19 PM] (15827) scanned(2) 39 files over 1 exec env
+2024-10-02 17:23:21.235 [info] [Info  - 5:23:21 PM] (15827) indexed(2) 17 files over 1 exec env
+2024-10-02 17:23:21.293 [info] [Info  - 5:23:21 PM] (15827) Indexing finished(2).
+2024-10-02 17:23:30.206 [info] [Info  - 5:23:30 PM] Server process exited successfully
+2024-10-02 17:23:30.772 [info] (Client) Pylance async client (2024.9.2) started with python extension (2024.14.1)
+2024-10-02 17:23:31.496 [info] [Info  - 5:23:31 PM] (15973) Server root directory: file:///home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist
+2024-10-02 17:23:31.498 [info] [Info  - 5:23:31 PM] (15973) Pylance language server 2024.9.2 (pyright version 1.1.378, commit ce64adc1) starting
+2024-10-02 17:23:31.511 [info] [Info  - 5:23:31 PM] (15973) Starting service instance "tsubasaman"
+2024-10-02 17:23:31.561 [info] [Info  - 5:23:31 PM] (15973) Setting environmentName for service "tsubasaman": "C:\Users\luvdr\AppData\Local\Programs\Python\Python310\python.exe"
+2024-10-02 17:23:31.561 [info] [Info  - 5:23:31 PM] (15973) No include entries specified; assuming /home/tsubasaman
+2024-10-02 17:23:31.563 [info] [Info  - 5:23:31 PM] (15973) Auto-excluding **/node_modules
+2024-10-02 17:23:31.563 [info] [Info  - 5:23:31 PM] (15973) Auto-excluding **/__pycache__
+2024-10-02 17:23:31.563 [info] [Info  - 5:23:31 PM] (15973) Auto-excluding **/.*
+2024-10-02 17:23:31.671 [info] [Info  - 5:23:31 PM] (15973) Found 4 source files
+2024-10-02 17:23:32.116 [info] [Info  - 5:23:32 PM] (15973) Background analysis(1) root directory: file:///home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist
+2024-10-02 17:23:32.120 [info] [Info  - 5:23:32 PM] (15973) Background analysis(1) started
+2024-10-02 17:24:03.381 [info] [Info  - 5:24:03 PM] (15973) Indexer background runner(2) root directory: file:///home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist (index)
+2024-10-02 17:24:03.381 [info] [Info  - 5:24:03 PM] (15973) Indexing(2) started
+2024-10-02 17:24:03.870 [info] [Info  - 5:24:03 PM] (15973) scanned(2) 39 files over 1 exec env
+2024-10-02 17:24:04.080 [info] [Info  - 5:24:04 PM] (15973) indexed(2) 17 files over 1 exec env
+2024-10-02 17:24:04.104 [info] [Info  - 5:24:04 PM] (15973) Indexing finished(2).
+2024-10-02 17:24:15.646 [info] [Info  - 5:24:15 PM] (15973) Setting environmentName for service "tsubasaman": "C:\Users\luvdr\AppData\Local\Programs\Python\Python310\python.exe"
+2024-10-02 17:24:15.648 [info] [Info  - 5:24:15 PM] (15973) No include entries specified; assuming /home/tsubasaman
+2024-10-02 17:24:15.648 [info] [Info  - 5:24:15 PM] (15973) Auto-excluding **/node_modules
+2024-10-02 17:24:15.648 [info] [Info  - 5:24:15 PM] (15973) Auto-excluding **/__pycache__
+2024-10-02 17:24:15.648 [info] [Info  - 5:24:15 PM] (15973) Auto-excluding **/.*
+2024-10-02 17:24:15.723 [info] [Info  - 5:24:15 PM] (15973) Found 4 source files
+2024-10-02 17:24:16.450 [info] [Info  - 5:24:16 PM] (15973) Indexer background runner(3) root directory: file:///home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist (index)
+2024-10-02 17:24:16.451 [info] [Info  - 5:24:16 PM] (15973) Indexing(3) started
+2024-10-02 17:24:16.845 [info] [Info  - 5:24:16 PM] (15973) scanned(3) 39 files over 1 exec env
+2024-10-02 17:24:17.085 [info] [Info  - 5:24:17 PM] (15973) indexed(3) 17 files over 1 exec env
+2024-10-02 17:24:17.106 [info] [Info  - 5:24:17 PM] (15973) Indexing finished(3).
+2024-10-02 17:24:33.721 [info] [Info  - 5:24:33 PM] (15973) Setting environmentName for service "tsubasaman": "3.10.12 (global)"
+2024-10-02 17:24:33.722 [info] [Info  - 5:24:33 PM] (15973) Setting pythonPath for service "tsubasaman": "/usr/bin/python3"
+2024-10-02 17:24:33.723 [info] [Info  - 5:24:33 PM] (15973) No include entries specified; assuming /home/tsubasaman
+2024-10-02 17:24:33.724 [info] [Info  - 5:24:33 PM] (15973) Auto-excluding **/node_modules
+2024-10-02 17:24:33.726 [info] [Info  - 5:24:33 PM] (15973) Auto-excluding **/__pycache__
+2024-10-02 17:24:33.726 [info] [Info  - 5:24:33 PM] (15973) Auto-excluding **/.*
+2024-10-02 17:24:33.742 [info] [Info  - 5:24:33 PM] (15973) Assuming Python version 3.10.12.final.0
+2024-10-02 17:24:33.779 [info] [Info  - 5:24:33 PM] (15973) Found 4 source files
+2024-10-02 17:24:34.355 [info] [Info  - 5:24:34 PM] (15973) Indexer background runner(4) root directory: file:///home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist (index)
+2024-10-02 17:24:34.355 [info] [Info  - 5:24:34 PM] (15973) Indexing(4) started
+2024-10-02 17:24:34.722 [info] [Info  - 5:24:34 PM] (15973) scanned(4) 39 files over 1 exec env
+2024-10-02 17:24:35.000 [info] [Info  - 5:24:35 PM] (15973) indexed(4) 17 files over 1 exec env
+2024-10-02 17:24:35.017 [info] [Info  - 5:24:35 PM] (15973) Indexing finished(4).

@@ -1,0 +1,23 @@
+2024-10-02 17:22:53.819 [info] [main] Log level: Info
+2024-10-02 17:22:53.819 [info] [main] Validating found git in: "git"
+2024-10-02 17:22:53.819 [info] [main] Using git "2.34.1" from "git"
+2024-10-02 17:22:53.819 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-02 17:22:53.819 [info] > git rev-parse --show-toplevel [4ms]
+2024-10-02 17:22:53.819 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-02 17:22:53.819 [info] > git rev-parse --show-toplevel [144ms]
+2024-10-02 17:22:53.819 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-02 17:22:53.845 [info] > git rev-parse --show-toplevel [22ms]
+2024-10-02 17:22:53.845 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-02 17:22:53.847 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-10-02 17:22:55.351 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-02 17:22:55.351 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-02 17:23:06.463 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "/home/tsubasaman/.vscode-server/extensions/.1cd54299-d3bc-4a53-a617-6df85587fd1d/bundled/libs/debugpy/_vendored/pydevd/_pydevd_frame_eval/". Error:Error: ENOENT: no such file or directory, realpath '/home/tsubasaman/.vscode-server/extensions/.1cd54299-d3bc-4a53-a617-6df85587fd1d/bundled/libs/debugpy/_vendored/pydevd/_pydevd_frame_eval/'
+2024-10-02 17:23:06.466 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "/home/tsubasaman/.vscode-server/extensions/.1cd54299-d3bc-4a53-a617-6df85587fd1d/bundled/libs/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/". Error:Error: ENOENT: no such file or directory, realpath '/home/tsubasaman/.vscode-server/extensions/.1cd54299-d3bc-4a53-a617-6df85587fd1d/bundled/libs/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/'
+2024-10-02 17:23:13.650 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-02 17:23:13.650 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-02 17:23:13.725 [info] > git rev-parse --show-toplevel [6ms]
+2024-10-02 17:23:13.725 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-02 17:23:30.207 [info] > git rev-parse --show-toplevel [24ms]
+2024-10-02 17:23:30.207 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-02 17:24:02.761 [info] > git rev-parse --show-toplevel [2ms]
+2024-10-02 17:24:02.761 [info] fatal: not a git repository (or any of the parent directories): .git

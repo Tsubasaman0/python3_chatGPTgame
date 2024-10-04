@@ -1,0 +1,42 @@
+2024-10-04 15:18:06.266 [info] [main] Log level: Info
+2024-10-04 15:18:06.266 [info] [main] Validating found git in: "git"
+2024-10-04 15:18:06.266 [info] [main] Using git "2.34.1" from "git"
+2024-10-04 15:18:06.266 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-04 15:18:06.266 [info] > git rev-parse --show-toplevel [6ms]
+2024-10-04 15:18:06.266 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-04 15:18:06.266 [info] > git rev-parse --show-toplevel [44ms]
+2024-10-04 15:18:06.266 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-04 15:18:06.267 [info] > git rev-parse --show-toplevel [3ms]
+2024-10-04 15:18:06.267 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-04 15:18:06.272 [info] > git rev-parse --show-toplevel [2ms]
+2024-10-04 15:18:06.272 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-04 15:18:06.277 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-04 15:18:06.277 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-04 15:18:06.282 [info] > git rev-parse --show-toplevel [2ms]
+2024-10-04 15:18:06.282 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-04 15:18:06.289 [info] > git rev-parse --show-toplevel [4ms]
+2024-10-04 15:18:06.289 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-04 15:18:06.292 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-10-04 15:30:31.773 [info] > git rev-parse --show-toplevel [2ms]
+2024-10-04 15:30:31.774 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-04 15:31:00.789 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-04 15:31:00.790 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-04 15:31:11.793 [info] > git rev-parse --show-toplevel [2ms]
+2024-10-04 15:31:11.797 [info] > git rev-parse --git-dir --git-common-dir [0ms]
+2024-10-04 15:31:11.804 [info] [Model][openRepository] Opened repository: /home/tsubasaman
+2024-10-04 15:31:11.813 [info] [Git][getRemotes] No remotes found in the git config file
+2024-10-04 15:31:11.814 [info] > git config --get commit.template [4ms]
+2024-10-04 15:31:11.820 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2024-10-04 15:31:11.821 [warning] [Git][getBranch] No such branch: master
+2024-10-04 15:31:12.116 [info] > git show --textconv :class.py [2ms]
+2024-10-04 15:31:12.117 [info] > git ls-files --stage -- /home/tsubasaman/class.py [1ms]
+2024-10-04 15:31:12.218 [info] > git status -z -uall [395ms] (cancelled)
+2024-10-04 15:31:12.350 [info] > git check-ignore -v -z --stdin [1ms]
+2024-10-04 15:33:28.701 [info] > git ls-files --stage -- /home/tsubasaman/class.py [2ms]
+2024-10-04 15:33:28.710 [info] > git show --textconv :class.py [1ms]
+2024-10-04 15:33:46.949 [info] > git ls-files --stage -- /home/tsubasaman/class.py [1ms]
+2024-10-04 15:33:47.007 [info] > git show --textconv :class.py [1ms]
+2024-10-04 15:34:37.452 [info] > git ls-files --stage -- /home/tsubasaman/class.py [3ms]
+2024-10-04 15:34:37.460 [info] > git show --textconv :class.py [2ms]
+2024-10-04 15:38:31.908 [info] > git ls-files --stage -- /home/tsubasaman/class.py [2ms]
+2024-10-04 15:38:31.964 [info] > git show --textconv :class.py [1ms]

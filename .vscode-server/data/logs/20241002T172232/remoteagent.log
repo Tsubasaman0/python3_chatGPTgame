@@ -1,0 +1,36 @@
+2024-10-02 17:22:32.824 [info] 
+
+
+
+
+2024-10-02 17:22:32.836 [info] Extension host agent started.
+2024-10-02 17:22:32.878 [info] Started initializing default profile extensions in extensions installation folder. file:///home/tsubasaman/.vscode-server/extensions
+2024-10-02 17:22:32.890 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/tsubasaman/.vscode-server/extensions
+2024-10-02 17:22:32.971 [info] [127.0.0.1][6141752a][ManagementConnection] New connection established.
+2024-10-02 17:22:33.234 [info] [127.0.0.1][691ce299][ExtensionHostConnection] New connection established.
+2024-10-02 17:22:33.246 [info] [127.0.0.1][691ce299][ExtensionHostConnection] <15211> Launched Extension Host Process.
+2024-10-02 17:22:49.956 [info] [127.0.0.1][6141752a][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-10-02 17:22:50.010 [info] [127.0.0.1][691ce299][ExtensionHostConnection] <15211> Extension Host Process exited with code: 0, signal: null.
+2024-10-02 17:22:51.862 [info] [127.0.0.1][9e40ebc5][ManagementConnection] New connection established.
+2024-10-02 17:22:52.082 [info] [127.0.0.1][b166967f][ExtensionHostConnection] New connection established.
+2024-10-02 17:22:52.130 [info] [127.0.0.1][b166967f][ExtensionHostConnection] <15386> Launched Extension Host Process.
+2024-10-02 17:23:00.385 [info] Getting Manifest... ms-python.python
+2024-10-02 17:23:00.503 [info] Installing extension: ms-python.python {"isMachineScoped":false,"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/tsubasaman/.vscode-server/extensions/extensions.json","external":"file:///home/tsubasaman/.vscode-server/extensions/extensions.json","path":"/home/tsubasaman/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.93.1","date":"2024-09-11T17:20:05.685Z"}}
+2024-10-02 17:23:01.356 [info] Getting Manifest... ms-python.vscode-pylance
+2024-10-02 17:23:01.392 [info] Getting Manifest... ms-python.debugpy
+2024-10-02 17:23:01.446 [info] Installing extension: ms-python.vscode-pylance {"isMachineScoped":false,"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/tsubasaman/.vscode-server/extensions/extensions.json","external":"file:///home/tsubasaman/.vscode-server/extensions/extensions.json","path":"/home/tsubasaman/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.93.1","date":"2024-09-11T17:20:05.685Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-10-02 17:23:01.447 [info] Installing extension: ms-python.debugpy {"isMachineScoped":false,"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/tsubasaman/.vscode-server/extensions/extensions.json","external":"file:///home/tsubasaman/.vscode-server/extensions/extensions.json","path":"/home/tsubasaman/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.93.1","date":"2024-09-11T17:20:05.685Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-10-02 17:23:04.807 [info] Extension signature verification result for ms-python.python: Success. Executed: true. Duration: 1965ms.
+2024-10-02 17:23:04.808 [info] Extension signature verification result for ms-python.debugpy: Success. Executed: true. Duration: 1962ms.
+2024-10-02 17:23:05.927 [info] Extracted extension to file:///home/tsubasaman/.vscode-server/extensions/ms-python.debugpy-2024.10.0-linux-x64: ms-python.debugpy
+2024-10-02 17:23:05.939 [info] Renamed to /home/tsubasaman/.vscode-server/extensions/ms-python.debugpy-2024.10.0-linux-x64
+2024-10-02 17:23:06.186 [info] Extension signature verification result for ms-python.vscode-pylance: Success. Executed: true. Duration: 1909ms.
+2024-10-02 17:23:08.938 [info] Extracted extension to file:///home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64: ms-python.python
+2024-10-02 17:23:08.953 [info] Renamed to /home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64
+2024-10-02 17:23:13.307 [info] Extracted extension to file:///home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2: ms-python.vscode-pylance
+2024-10-02 17:23:13.325 [info] Renamed to /home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2
+2024-10-02 17:23:13.344 [info] Extension installed successfully: ms-python.debugpy file:///home/tsubasaman/.vscode-server/extensions/extensions.json
+2024-10-02 17:23:13.344 [info] Extension installed successfully: ms-python.python file:///home/tsubasaman/.vscode-server/extensions/extensions.json
+2024-10-02 17:23:13.344 [info] Extension installed successfully: ms-python.vscode-pylance file:///home/tsubasaman/.vscode-server/extensions/extensions.json
+2024-10-02 17:28:36.960 [info] [127.0.0.1][9e40ebc5][ManagementConnection] The client has reconnected.
+2024-10-04 15:13:47.297 [info] [127.0.0.1][b166967f][ExtensionHostConnection] The client has reconnected.

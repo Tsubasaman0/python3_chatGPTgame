@@ -1,0 +1,51 @@
+2024-10-04 15:18:06.175 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-10-04 15:18:06.175 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-10-04 15:18:06.175 [info] Experiment 'pythonTestAdapter' is active
+2024-10-04 15:18:06.175 [warning] Dir "/home/tsubasaman/.pixi/envs" is not watchable (directory does not exist)
+2024-10-04 15:18:06.175 [info] Default formatter is set to null for workspace /home/tsubasaman
+2024-10-04 15:18:06.175 [info] Starting Environment refresh
+2024-10-04 15:18:06.175 [info] > pixi --version
+2024-10-04 15:18:06.175 [info] > hatch env show --json
+2024-10-04 15:18:06.175 [info] cwd: .
+2024-10-04 15:18:06.175 [info] Python interpreter path: /usr/bin/python3
+2024-10-04 15:18:06.315 [info] > C:\Users\luvdr\AppData\Local\Programs\Python\Python310\python.exe -I ./.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ./.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-10-04 15:18:06.315 [info] Environments refresh paths discovered: 1579 milliseconds
+2024-10-04 15:18:06.337 [error] [Error: Command failed: C:\Users\luvdr\AppData\Local\Programs\Python\Python310\python.exe -I /home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py /home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+/bin/sh: 1: C:UsersluvdrAppDataLocalProgramsPythonPython310python.exe: not found
+
+	at genericNodeError (node:internal/errors:984:15)
+	at wrappedFn (node:internal/errors:538:14)
+	at ChildProcess.exithandler (node:child_process:422:12)
+	at ChildProcess.emit (node:events:531:35)
+	at maybeClose (node:internal/child_process:1105:16)
+	at Socket.<anonymous> (node:internal/child_process:457:11)
+	at Socket.emit (node:events:519:28)
+	at Pipe.<anonymous> (node:net:338:12)] {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: 'C:\\Users\\luvdr\\AppData\\Local\\Programs\\Python\\Python310\\python.exe -I /home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py /home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py'
+}
+2024-10-04 15:18:08.339 [info] > C:\Users\luvdr\AppData\Local\Programs\Python\Python310\python.exe -I ./.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py ./.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+2024-10-04 15:18:08.363 [error] [Error: Command failed: C:\Users\luvdr\AppData\Local\Programs\Python\Python310\python.exe -I /home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py /home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py
+/bin/sh: 1: C:UsersluvdrAppDataLocalProgramsPythonPython310python.exe: not found
+
+	at genericNodeError (node:internal/errors:984:15)
+	at wrappedFn (node:internal/errors:538:14)
+	at ChildProcess.exithandler (node:child_process:422:12)
+	at ChildProcess.emit (node:events:531:35)
+	at maybeClose (node:internal/child_process:1105:16)
+	at Socket.<anonymous> (node:internal/child_process:457:11)
+	at Socket.emit (node:events:519:28)
+	at Pipe.<anonymous> (node:net:338:12)] {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: 'C:\\Users\\luvdr\\AppData\\Local\\Programs\\Python\\Python310\\python.exe -I /home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/get_output_via_markers.py /home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/python_files/interpreterInfo.py'
+}
+2024-10-04 15:18:08.364 [info] Environments refresh finished (event): 3628 milliseconds
+2024-10-04 15:18:08.366 [info] Environment refresh took 3631 milliseconds
+2024-10-04 15:18:08.370 [info] > pyenv which python
+2024-10-04 15:18:08.370 [info] cwd: .
+2024-10-04 15:18:08.442 [warning] could not find a pixi interpreter for the interpreter at /usr/bin/python3
+2024-10-04 15:18:09.076 [info] Starting Pylance language server.

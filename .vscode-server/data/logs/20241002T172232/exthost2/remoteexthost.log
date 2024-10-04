@@ -1,0 +1,38 @@
+2024-10-02 17:22:52.832 [info] Extension host with pid 15386 started
+2024-10-02 17:22:52.853 [info] Lock '/home/tsubasaman/.vscode-server/data/User/workspaceStorage/fd176e0e72f827848704486850f1219f/vscode.lock': Lock acquired.
+2024-10-02 17:22:52.891 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-02 17:22:52.918 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-10-02 17:22:52.919 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-10-02 17:22:53.371 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-02 17:22:53.372 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-02 17:22:53.372 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-02 17:22:53.373 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-10-02 17:22:53.632 [info] Eager extensions activated
+2024-10-02 17:22:53.633 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-10-02 17:22:53.633 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-02 17:23:13.726 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
+2024-10-02 17:23:14.306 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2024-10-02 17:23:14.307 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
+2024-10-02 17:23:30.198 [warning] DiagnosticCollection with name 'settings' does already exist.
+2024-10-02 17:23:49.507 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-10-02 17:23:54.786 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2024-10-02 17:24:03.257 [error] Error: LanguageStatusItem with id 'python.analysis.typeCheckingMode' ALREADY exists
+	at c.createLanguageStatusItem (/home/tsubasaman/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/out/vs/workbench/api/node/extensionHostProcess.js:161:163942)
+	at Object.createLanguageStatusItem (/home/tsubasaman/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/out/vs/workbench/api/node/extensionHostProcess.js:171:38483)
+	at _0x479bca.createStatusItem (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/extension.bundle.js:1:267466)
+	at _0x479bca.updateStatusItem (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/extension.bundle.js:1:281115)
+	at p (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/vendor.bundle.js:2:1792722)
+	at E (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/vendor.bundle.js:2:1792929)
+	at Timeout.I [as _onTimeout] (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/vendor.bundle.js:2:1792831)
+	at listOnTimeout (node:internal/timers:573:17)
+	at process.processTimers (node:internal/timers:514:7)
+2024-10-02 17:24:04.245 [error] Error: Client is not running
+	at P.sendRequest (/home/tsubasaman/.vscode-server/extensions/ms-python.python-2024.14.1-linux-x64/out/client/extension.js:2:2091911)
+	at Object._0x50f843 [as sendRequest] (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/extension.bundle.js:1:144733)
+	at _0x2c06b0.getConfigInfo (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/extension.bundle.js:1:270094)
+	at _0x479bca.updateStatusItem (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/extension.bundle.js:1:281182)
+	at p (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/vendor.bundle.js:2:1792722)
+	at E (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/vendor.bundle.js:2:1792929)
+	at Timeout.I [as _onTimeout] (/home/tsubasaman/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2/dist/vendor.bundle.js:2:1792831)
+	at listOnTimeout (node:internal/timers:573:17)
+	at process.processTimers (node:internal/timers:514:7)
