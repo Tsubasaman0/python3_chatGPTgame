@@ -1,32 +1,65 @@
 import random
 
+# 共通関数
+# 指定した数値から指定した数値までの乱数を簡潔に出力できる関数
 def rand(start, goal):
     return random.randint(start, goal)
 
+# 入力値が誤っている場合のエラーメッセージを表示させる関数
 def error_message():
     print("入力値が間違っています、再入力してください")
+
+# ユーザーから入力された数値を返す関数
+def get_user_input(options_list, select_message="数値を入力してください", has_name=False): # has_nameをTrueにすると別クラスのnameを表示できる
+    while True:
+        try:
+            print(select_message)
+            
+            for i in range(len(options_list)):
+                option = options_list[i]
+                    
+                if has_name == True:
+                    print(f"{i+1}:  {option.name}")
+                else:
+                    print(f"{i+1}:  {option}")
+                
+            user_input = int(input())
+                
+            if 1 <= user_input <= len(options_list):
+                return user_input
+                
+            else:
+                error_message()
+                continue
+                
+        except ValueError:
+            error_message()
 
 # プレイヤーやモンスターなどのキャラクターのクラス
 class Character:
     # キャラクター名、ヒットポイント
-    def __init__(self, name, base_hp, hp, attack_power, defense_power, x, y, exp=0, level=1, exp_to_next_level=0, level_up_table=2, item_bag=None):
+    def __init__(self, name, base_hp, hp, attack_power, defense_power, x, y, exp=0, level=1, remaining_exp_to_level_up=0, exp_growth_factor=2, item_bag=None):
         self.name = name
         self.base_hp = base_hp
         self.hp = hp
         self.attack_power = attack_power
         self.defence_power = defense_power
         self.x = x
-        self.y  = y
+        self.y = y
         self.exp = exp
         self.level = level
-        self.exp_to_next_level = exp_to_next_level
-        self.level_up_table = level_up_table
-        if item_bag is None:
-            self.item_bag = []
+        self.remaining_exp_to_level_up = remaining_exp_to_level_up
+        self.exp_growth_factor = exp_growth_factor
+        self.item_bag = item_bag or []
         
     # 経験値を取得する関数
     def add_exp(self, exp_gained):
         self.exp += exp_gained
+    
+    # 引数にレベル値を入力するとそのレベルまでに必要なEXPを返す関数
+    def get_goal_level_up_exp(self, level):
+        return self.exp_growth_factor ** level + 1 # 初期レベルの１を除く
+    
         
     # 次回レベルアップまでの経験値を計算、self.exp_to_next_levelに代入する関数
     def get_next_level_exp(self):
@@ -34,29 +67,30 @@ class Character:
         temp_level = 0
         while True:
             temp_level += 1
-            level_up_table_exp_sum += self.level_up_table ** temp_level
+            level_up_table_exp_sum += self.exp_growth_factor ** temp_level
             if self.exp < level_up_table_exp_sum:
-                self.exp_to_next_level = self.exp - level_up_table_exp_sum
+                self.remaining_exp_to_level_up = abs(self.exp - level_up_table_exp_sum)
                 break
         
     # キャラクターがレベルアップする経験値に達しているかを返す関数
     def check_level_up(self):
-        return self.exp_to_next_level <= 0
+        level_up_table_exp_sum = 0
+        temp_level = 0
+        while True:
+            temp_level += 1
+            level_up_table_exp_sum += self.exp_growth_factor ** temp_level
+            return self.exp < level_up_table_exp_sum
         
     # いくつレベルアップしたか確認する関数
     def calculate_level_ups(self):
-        temp_level = self.level   # この関数がおかしい
-        level_up_count = 0
-        
+        level_up_table_exp_sum = 0
+        temp_level = 0
         while True:
-            if  self.exp_to_next_level <= 0:
-                level_up_count += 1
-                temp_level +=1
-                # 次回レベルアップまでの経験値を計算した値を、self.exp_to_next_levelに代入することもセットで処理
-                initial_exp_needed = self.level_up_table ** temp_level
-                self.exp_to_next_level = initial_exp_needed + self.exp_to_next_level 
-            else:
-                return level_up_count
+            temp_level += 1
+            level_up_table_exp_sum += self.exp_growth_factor ** temp_level
+            if self.exp < level_up_table_exp_sum:
+                level_ups_count = temp_level - self.level
+                return level_ups_count
     
     # キャラクターがレベルアップしたときの処理関数
     def level_ups(self, level_up_ponints):
@@ -88,7 +122,7 @@ HP: {self.base_hp} + {hp_points} ↑
 HP: {self.hp} / {self.base_hp}
 攻撃力: {self.attack_power}
 防御力: {self.defence_power}
-次のレベルアップまでの経験値: {self.exp_to_next_level} 
+次のレベルアップまでの経験値: {self.remaining_exp_to_level_up} 
 x: {self.x}
 y: {self.y}
 アイテムバッグ:
@@ -99,21 +133,25 @@ y: {self.y}
     def show_position(self):
         print(f"{self.name}の現在地はx = {self.x}, y = {self.y}")
         
+    # アイテムバッグを開いてアイテムを【使う、捨てる、閉じる】を選択して、選択したインデックスを返す関数
+    def action_item_index(self):
+        return get_user_input(["使う", "捨てる", "閉じる"])
+    
+    
     # Item_bagを開いた時の動作の関数
     def open_item_bag(self):
         if len(self.item_bag) == 0:
-            print("アイテムを持っていません")
+            print("アイテムバッグを開いたが、アイテムをなにも持っていなかったのでバッグをそっと閉じた")
             
         else:
-            select_item_index = self.select_index(len(self.item_bag), self.item_bag, True, "アイテムを選んでください", True)
-            action_item_index = self.select_index(3, ["使う", "捨てる", "閉じる"])
+            select_item_index = get_user_input(len(self.item_bag, "アイテムを選んでください", True))
+            action_item_index = get_user_input(["使う", "捨てる", "閉じる"], "行動を選択してください")
             
             if action_item_index == 1: # 使う
                 self.use_item(self.item_bag[select_item_index-1], action_item_index-1)
             
             elif action_item_index == 2: # 捨てる
-                print(f"{self.item_bag[select_item_index-1].name}を捨てた")
-                self.item_bag.pop(select_item_index-1)
+                self.delete_item(select_item_index-1)
                  
             elif action_item_index == 3: # 閉じる   
                 return # 処理終了
@@ -122,56 +160,8 @@ y: {self.y}
     def check_encounter(self, target):
         return self.x == target.x and self.y == target.y
     
-    # 選択方向を決める関数
-    def choice_direction(self):
-        
-        while True:
-            try:
-                user_input = int(input("進む方向を選ぶ 1:上  2:下  3:右  4:左"))
-                
-                if 1 <= user_input <= 4:
-                    return user_input
-                
-                else:
-                    error_message()
-                    continue
-                
-            except ValueError:
-                error_message()
-
-    # 行動や方向を選択するための関数、choice_directionとselect_actionをまとめたもの
-    def select_index(
-            self, index, options_list, is_message_selected=True, select_message="選んでください", has_name=False):
-        
-        # options_listをfor分でprintする、そのあとにinputで選択したindexを返す
-        
-        while True:
-            try:
-                if is_message_selected == True:
-                    print(select_message)
-                
-                for i in range(len(options_list)):
-                    option = options_list[i]
-                    
-                    if has_name:
-                        print(f"{i+1}:  {option.name}")
-                    else:
-                        print(f"{i+1}:  {option}")
-                
-                user_input = int(input())
-                
-                if 1 <= user_input <= index:
-                    return user_input
-                
-                else:
-                    error_message()
-                    continue
-                
-            except ValueError:
-                error_message()
-    
     # キャラクターを移動させるための関数
-    def move(self, direction, move_distance=1):
+    def move(self, direction, move_distance=1): # move_distanceは移動する距離、デフォルトは１マス
         direction_name = ["上", "下", "右", "左"]
         
         if direction == 1:
@@ -233,7 +223,7 @@ y: {self.y}
             print(f"{self.name}のターン")
             while True:
                 try:
-                    user_input = int(input("1: 攻撃   2: 防御"))
+                    user_input = get_user_input(["攻撃", "防御"])
                     
                     if 1 <= user_input <= 2:
                         
@@ -275,7 +265,7 @@ y: {self.y}
 経験値を{exp_gained}手に入れた
 """)
         self.add_exp(exp_gained)
-        
+        self.get_next_level_exp()
         if self.check_level_up:
             level_up_points =  self.calculate_level_ups()
             self.level_ups(level_up_points)
@@ -283,6 +273,11 @@ y: {self.y}
     # キャラクターがアイテムを使う関数 Character.use_item(item) 
     def use_item(self, item, popped_index):
         item.use(self)
+        self.item_bag.pop(popped_index)
+    
+    # キャラクターがアイテムを捨てたときの関数
+    def delete_item(self, popped_index):
+        print(f"{self.item_bag[popped_index].name}を捨てた")
         self.item_bag.pop(popped_index)
     
     # キャラクターがアイテムを手に入れたときの関数
@@ -339,8 +334,8 @@ effect_summary: {self.effect_summary}
     # アイテムエフェクトがrecoveryだった場合の関数
     def recovery_by_method(self, character):
         character.hp += self.effect_points
-        if character.hp >= character.BASE_HP:
-            character.hp = character.BASE_HP
+        if character.hp >= character.base_hp:
+            character.hp = character.base_hp
             print(f"{character.name}は{self.name}を使った、HPが全回復した")
         else:
             print(f"{character.name}は{self.name}を使った。HPが{self.effect_points}回復した")
@@ -364,13 +359,15 @@ effect_summary: {self.effect_summary}
 chest = Item("伝説の宝", 5, 5, 10000)
 potion = Item("ポーション", 0, -1, 500, "recovery", 5)
 hi_potion = Item("ハイポーション", 0,-2, 1000, "recovery", 10)
-player = Character("ゆうしゃ", 10, 10, 3, 3, 0, 0, item_bag=[])
+player = Character("ゆうしゃ", 10, 8, 3, 3, 0, 0)
 monster = Enemy("ドラゴン", 8, 8, 2, 2, 3, 3, 15)
 
 monster_list = [monster]
 item_list = [potion, hi_potion, chest]
 
 is_game_over = False
+
+#テスト入力
 
 print(f'''ゲームの説明
 ダンジョン内にある{chest.name}を手に入れることが出来ればゲームクリア
@@ -385,10 +382,10 @@ while is_game_over is False:
     chest.show_position()
     player.show_position()
     monster.show_position()
-    action_index = player.select_index(3, ["移動する", "アイテムバッグを開く", "ステータス確認"])
+    action_index = get_user_input(["移動する", "アイテムバッグを開く", "ステータス確認"])
     if action_index == 1:
         player.move(
-            player.select_index(4, ["上", "下", "右", "左"], True, "進む方向を選んでください")
+            get_user_input(["上", "下", "右", "左"], "進む方向を選んでください")
             )
         monster.move(rand(1,4))
         for item in item_list:
@@ -416,4 +413,3 @@ while is_game_over is False:
         player.open_item_bag()
     elif action_index == 3:
         player.show_status()
-        

@@ -51,11 +51,12 @@ Lv {i+1} までに 必要EXP {table ** i} : 合計必要EXP {level_up_table_exp_
         return
     
     print(f'''
-{exp} EXPでLv1から Lv {i} レベルまで上がり、次の Lv {i+1} まで {abs(next_level_exp) } EXP 必要です''')    
+{exp} EXPでLv1から Lv {i} レベルまで上がり、次の Lv {i+1} まで {abs(next_level_exp) } EXP 必要です''')
+
     
     
 print(get_next_level_exp_new(2, 1000))
-show_level_exp_table_and_next_level_exp(2, 1000, 20)
+show_level_exp_table_and_next_level_exp(2, 50, 20)
     
         
 
